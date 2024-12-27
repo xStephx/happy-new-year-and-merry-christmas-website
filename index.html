@@ -21,7 +21,7 @@
 </head>
 
 <body class="scroll-smooth bg-red-400 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
-    <section class="relative w-full h-screen flex flex-col items-center justify-center">
+    <header class="relative w-full h-screen flex flex-col items-center justify-center">
         <div class="absolute inset-0 bg-hero bg-cover bg-center brightness-50 z-0"></div>
         <nav class="absolute top-8 z-10 w-full">
             <ul class="flex mx-auto items-center justify-center text-lg">
@@ -33,7 +33,25 @@
         <h1 class="animate__animated animate__fadeInDown relative z-10 lg:text-8xl md:text-6xl text-3xl text-center text-white">
             Happy New Year <br> & Merry Christmas
         </h1>
-    </section>
+    </header>
+    <main class="p-4">
+        <section id="aboutSection" class="container mx-auto">
+            <h2 class="text-center text-6xl my-10">About</h2>
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <p id="aboutText" class="md:text-xl text-lg w-full md:w-1/2 text-center md:text-left md:order-1 order-2 p-4">
+                    The holiday season is more than just a time for
+                    gifts and festivities—it’s a moment to pause, reflect,
+                    and celebrate the bonds that bring us together. Christmas
+                    fills our hearts with warmth, love, and the joy of giving,
+                    while the New Year inspires us to embrace fresh beginnings 
+                    and exciting possibilities. From twinkling lights and heartfelt 
+                    traditions to shared laughter and dreams for the future, we’re here to 
+                    make your celebrations even more memorable. 
+                </p>
+                <img id="aboutImage" src="assets/images/santa.png" alt="Santa" class="w-full md:w-1/2 md:order-2 order-1 p-4">
+            </div>
+        </section>
+    </main>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 </body>
