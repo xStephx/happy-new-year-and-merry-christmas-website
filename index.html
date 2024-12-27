@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.png">
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,20 @@
     <title>Happy New Year & Merry Christmas</title>
 </head>
 
-<body>
+<body class="scroll-smooth bg-red-400 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
+    <section class="relative w-full h-screen flex flex-col items-center justify-center">
+        <div class="absolute inset-0 bg-hero bg-cover bg-center brightness-50 z-0"></div>
+        <nav class="absolute top-8 z-10 w-full">
+            <ul class="flex mx-auto items-center justify-center text-lg">
+                <li class="mr-3"><a href="#">Gifts</a></li>
+                <li><a href="#"><img src="assets/images/logo.png" alt="Logo" class="w-[100px]"></a></li>
+                <li class="ml-3"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="animate__animated animate__fadeInDown relative z-10 lg:text-8xl md:text-6xl text-3xl text-center text-white">
+            Happy New Year <br> & Merry Christmas
+        </h1>
+    </section>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 </body>
