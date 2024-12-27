@@ -20,12 +20,12 @@
     <title>Happy New Year & Merry Christmas</title>
 </head>
 
-<body class="scroll-smooth bg-red-400 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
+<body class="scroll-smooth bg-red-500 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
     <header class="relative w-full h-screen flex flex-col items-center justify-center">
         <div class="absolute inset-0 bg-hero bg-cover bg-center brightness-50 z-0"></div>
         <nav class="absolute top-8 z-10 w-full">
-            <ul class="flex mx-auto items-center justify-center text-lg">
-                <li class="mr-3"><a href="#">Gifts</a></li>
+            <ul class="flex mx-auto items-center justify-center text-2xl">
+                <li class="mr-3"><a href="#giftsSection">Gifts</a></li>
                 <li><a href="#"><img src="assets/images/logo.png" alt="Logo" class="w-[100px]"></a></li>
                 <li class="ml-3"><a href="#">Contact</a></li>
             </ul>
@@ -35,7 +35,7 @@
         </h1>
     </header>
     <main class="p-4">
-        <section id="aboutSection" class="container mx-auto">
+        <section id="aboutSection" class="container mx-auto my-10">
             <h2 class="text-center text-6xl my-10">About</h2>
             <div class="flex md:flex-row flex-col justify-center items-center">
                 <p id="aboutText" class="md:text-xl text-lg w-full md:w-1/2 text-center md:text-left md:order-1 order-2 p-4">
@@ -49,6 +49,76 @@
                     make your celebrations even more memorable. 
                 </p>
                 <img id="aboutImage" src="assets/images/santa.png" alt="Santa" class="w-full md:w-1/2 md:order-2 order-1 p-4">
+            </div>
+        </section>
+        <section id="giftsSection" class="container mx-auto my-36">
+            <h2 class="text-center text-6xl my-10">Gifts</h2>
+            <div class="flex md:flex-row flex-col gap-4 my-20">
+                <div id="giftFirst" class="text-center flex flex-col justify-center items-center">
+                    <a href="#stickersSection"><img src="assets/images/gift-sticker-1.png" alt="Sticker 1" class="w-[250px] cursor-pointer transition-transform duration-300 transform hover:scale-110"></a>
+                    <p class="text-xl">Stickers</p>
+                    <p class="text-lg">
+                        Add a touch of festive magic to your 
+                        celebrations with delightful collection 
+                        of Christmas and New Year stickers!
+                    </p>
+                </div>
+                <div id="giftSecond" class="text-center flex flex-col justify-center items-center">
+                    <a href="#playlistsSection"><img src="assets/images/gift-sticker-2.png" alt="Sticker 2" class="w-[250px] cursor-pointer transition-transform duration-300 transform hover:scale-110"></a>
+                    <p class="text-xl">Playlists</p>
+                    <p class="text-lg">
+                        Set the perfect holiday mood with playlists, 
+                        featuring Christmas classics 
+                        and New Year party favorites!
+                    </p>
+                </div>
+                <div id="giftThird" class="text-center flex flex-col justify-center items-center">
+                    <a href="#gallerySection"><img src="assets/images/gift-sticker-3.png" alt="Sticker 3" class="w-[250px] cursor-pointer transition-transform duration-300 transform hover:scale-110"></a>
+                    <p class="text-xl">Gallery</p>
+                    <p class="text-lg">
+                        Explore festive gallery filled with joyful moments, 
+                        sparkling decorations, and unforgettable memories 
+                        from this holiday season!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="stickersSection" class="container mx-auto my-36">
+            <h2 class="text-center text-6xl my-10">Stickers</h2>
+            <div class="flex flex-col">
+                <div id="stickerFirstHalf" class="flex md:flex-row flex-col justify-center items-center md:my-10 my-5">
+                    <img src="assets/images/sticker-1.png" alt="Sticker 1" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-2.png" alt="Sticker 2" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-3.png" alt="Sticker 3" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-4.png" alt="Sticker 4" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                </div>
+                <div id="stickerSecondHalf" class="flex md:flex-row flex-col justify-center items-center md:my-10 my-5">
+                    <img src="assets/images/sticker-5.png" alt="Sticker 1" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-6.png" alt="Sticker 2" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-7.png" alt="Sticker 3" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                    <img src="assets/images/sticker-8.png" alt="Sticker 4" class="lg:w-[250px] w-[150px] cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                </div>
+            </div>
+        </section>
+        <section id="playlistsSection" class="container mx-auto my-36">
+            <h2 class="text-center text-6xl my-10">Playlists</h2>
+            <div class="flex md:flex-row flex-col justify-center items-center gap-12">
+                <div id="youtubePlaylist" class="text-center text-2xl">
+                    <a href="https://www.youtube.com/watch?v=3CWJNqyub3o&list=PLI-is5tEGAnSAlFFQ3fEWvQistH_KDPRV&index=1" target="_blank"><p>YouTube Playlist</p></a>
+                    <a href="https://www.youtube.com/watch?v=3CWJNqyub3o&list=PLI-is5tEGAnSAlFFQ3fEWvQistH_KDPRV&index=1" target="_blank"><img src="assets/images/playlist-1.png" alt="Playlist 1" class="w-[250px] mt-6 cursor-pointer transition-transform duration-300 transform hover:scale-110"></a>
+                </div>
+                <div id="spotifyPlaylist" class="text-center text-2xl">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX0Yxoavh5qJV?si=c09b0fbedeef4089" target="_blank"><p>Spotify Playlist</p></a>
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX0Yxoavh5qJV?si=c09b0fbedeef4089" target="_blank"><img src="assets/images/playlist-2.png" alt="Playlist 2" class="w-[250px] mt-6 cursor-pointer transition-transform duration-300 transform hover:scale-110"></a>
+                </div>
+            </div>
+        </section>
+        <section id="gallerySection" class="container mx-auto my-36">
+            <h2 class="text-center text-6xl my-10">Gallery</h2>
+            <div id="gallery" class="flex md:flex-row flex-col justify-center items-center gap-8">
+                <img src="assets/images/gallery-1.jpg" alt="Gallery 1" class="lg:w-[320px] w-[200px] rounded-xl cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                <img src="assets/images/gallery-2.jpg" alt="Gallery 2" class="lg:w-[320px] w-[200px] rounded-xl cursor-pointer transition-transform duration-300 transform hover:scale-110">
+                <img src="assets/images/gallery-3.jpg" alt="Gallery 3" class="lg:w-[320px] w-[200px] rounded-xl cursor-pointer transition-transform duration-300 transform hover:scale-110">
             </div>
         </section>
     </main>
