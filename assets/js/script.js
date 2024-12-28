@@ -13,6 +13,9 @@ const youtubePlaylist = document.getElementById('youtubePlaylist');
 const spotifyPlaylist = document.getElementById('spotifyPlaylist');
 const gallerySection = document.getElementById('gallerySection');
 const gallery = document.getElementById('gallery');
+const contactSection = document.getElementById('contactSection');
+const contactForm = document.getElementById('contactForm');
+const contactImg = document.getElementById('contactImg');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -41,6 +44,11 @@ const observer = new IntersectionObserver(entries => {
         if(entry.target === gallerySection && entry.isIntersecting){
             gallery.classList.add('animate__animated', 'animate__fadeInLeft');
         }
+
+        if(entry.target === contactSection && entry.isIntersecting){
+            contactForm.classList.add('animate__animated', 'animate__fadeInLeft');
+            contactImg.classList.add('animate__animated', 'animate__fadeInRight');
+        }
     });
 }, { threshold: 0.3 });
 
@@ -49,3 +57,7 @@ observer.observe(giftsSection);
 observer.observe(stickersSection);
 observer.observe(playlistsSection);
 observer.observe(gallerySection);
+observer.observe(contactSection);
+
+
+

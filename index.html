@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <!-- Meta Information -->
@@ -20,14 +20,14 @@
     <title>Happy New Year & Merry Christmas</title>
 </head>
 
-<body class="scroll-smooth bg-red-500 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
-    <header class="relative w-full h-screen flex flex-col items-center justify-center">
+<body class="bg-red-500 font-Chewy min-h-screen flex flex-col justify-center items-center text-white overflow-x-hidden">
+    <header id="homeSection" class="relative w-full h-screen flex flex-col items-center justify-center">
         <div class="absolute inset-0 bg-hero bg-cover bg-center brightness-50 z-0"></div>
         <nav class="absolute top-8 z-10 w-full">
             <ul class="flex mx-auto items-center justify-center text-2xl">
                 <li class="mr-3"><a href="#giftsSection">Gifts</a></li>
-                <li><a href="#"><img src="assets/images/logo.png" alt="Logo" class="w-[100px]"></a></li>
-                <li class="ml-3"><a href="#">Contact</a></li>
+                <li><a href="#homeSection"><img src="assets/images/logo.png" alt="Logo" class="w-[100px]"></a></li>
+                <li class="ml-3"><a href="#contactSection">Contact</a></li>
             </ul>
         </nav>
         <h1 class="animate__animated animate__fadeInDown relative z-10 lg:text-8xl md:text-6xl text-3xl text-center text-white">
@@ -121,7 +121,26 @@
                 <img src="assets/images/gallery-3.jpg" alt="Gallery 3" class="lg:w-[320px] w-[200px] rounded-xl cursor-pointer transition-transform duration-300 transform hover:scale-110">
             </div>
         </section>
+        <section id="contactSection" class="container mx-auto my-36">
+            <h2 class="text-center text-6xl my-10">Contact</h2>
+            <div class="flex md:flex-row flex-col justify-center items-center my-20">
+                <form id="contactForm" class="flex flex-col md:order-1 order-2">
+                    <label class="text-xl my-2">Name</label>
+                    <input type="text" placeholder="Enter your name..." class="w-[250px] h-[40px] px-4 rounded-xl outline-none border-2 border-white bg-transparent placeholder:text-white">
+                    <label class="text-xl my-2">Email</label>
+                    <input type="email" placeholder="Santa needs to contact you..." class="w-[250px] h-[40px] px-4 rounded-xl outline-none border-2 border-white bg-transparent placeholder:text-white">
+                    <label class="text-xl my-2">Message</label>
+                    <textarea placeholder="Tell us your christmas wish..." class="w-[250px] h-[200px] p-4 rounded-xl outline-none border-2 border-white bg-transparent placeholder:text-white"></textarea>
+                    <button type="submit" class="text-xl my-2">Submit</button>
+                </form>
+                <img id="contactImg" src="assets/images/contact-img.png" alt="" class="md:order-2 order-1 md:mb-0 mb-20">
+            </div>
+        </section>
     </main>
+    <footer class="flex flex-col justify-center items-center p-5">
+        <a href="#homeSection"><img src="assets/images/logo.png" alt="" class="w-[75px]"></a>
+        <p>Powered by Steph</p>
+    </footer>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 </body>
