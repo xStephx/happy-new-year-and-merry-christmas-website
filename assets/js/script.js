@@ -1,3 +1,4 @@
+// DOM elements
 const aboutSection = document.getElementById('aboutSection');
 const aboutText = document.getElementById('aboutText');
 const aboutImage = document.getElementById('aboutImage');
@@ -17,6 +18,7 @@ const contactSection = document.getElementById('contactSection');
 const contactForm = document.getElementById('contactForm');
 const contactImg = document.getElementById('contactImg');
 
+// Creating an IntersectionObserver to detect when sections come into view and trigger animations
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         
@@ -52,6 +54,7 @@ const observer = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.3 });
 
+// Observing all target sections
 observer.observe(aboutSection);
 observer.observe(giftsSection);
 observer.observe(stickersSection);
@@ -59,6 +62,8 @@ observer.observe(playlistsSection);
 observer.observe(gallerySection);
 observer.observe(contactSection);
 
+
+// Function to create animated snowflakes
 function createSnowflakes() {
     const snowflakeCount = 50;
     const snowflakeChars = ['❄', '❆', '❅'];
@@ -91,6 +96,7 @@ function createSnowflakes() {
 
 createSnowflakes();
 
+// Adding keyframes for falling animation using inline style
 const style = document.createElement('style');
 style.innerHTML = `
     @keyframes falling {
@@ -100,6 +106,7 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
+// Update snowflakes on window resize to adjust to new dimensions
 let resizeTimeout;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
