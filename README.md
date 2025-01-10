@@ -2,6 +2,10 @@
 
 ## Overview
 
+### Screenshot
+
+![](./assets/design/desktop-screenshot.png)
+
 You can check it out live [here](https://xstephx.github.io/happy-new-year-and-merry-christmas-website/).
 
 ## My process
